@@ -2,8 +2,8 @@
     "token": "YOUR_BOT_TOKEN",
     "client_id": "YOUR_BOT_CLIENT_ID",
     "genius_token": "YOUR_GENIUS_TOKEN",
-    "mongodb_url": "YOUR_MONGODB_URL",
-    "mongodb_name": "YOUR_MONGODB_DB_NAME",
+    "mongodb_url": "mongodb://admin:admin@mongo:27017",
+    "mongodb_name": "vocard_db",
     "nodes": {
         "DEFAULT": {
             "host": "lavalink",
