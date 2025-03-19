@@ -34,3 +34,8 @@ Please see the [Setup Page](https://docs.vocard.xyz/latest/bot/setup) in the doc
 ## Need Help?
 Join the [Vocard Support Discord](https://discord.gg/wRCgB7vBQv) for help or questions.
 
+## Force Rebuild Docker Containers
+After editing reference files such as `settings.json` or `application.yml`, you may need to rebuild the Docker containers to apply the changes. To do this, run the following command:
+```bash
+docker-compose up --build -d
+```
