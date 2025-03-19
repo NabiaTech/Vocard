@@ -21,6 +21,7 @@ services:
             - LAVALINK_SERVER_PASSWORD=youshallnotpass # Change password if needed (don't forget to change it in healthcheck below and settings.json)
         volumes:
             - ./lavalink/application.yml:/opt/Lavalink/application.yml
+            - ./lavalink/plugins:/opt/Lavalink/plugins/
         networks:
             - vocard
         expose:
