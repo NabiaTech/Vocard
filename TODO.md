@@ -2,7 +2,7 @@
 
 ## Add support for music services
 - [ x ] Add SoundCloud support
-- [ ] Add Spotify support
+- [ x ] Add Spotify support
 - [ ] Add Apple Music support
 - [ ] Add Deezer support
 - [ ] Add Tidal support
