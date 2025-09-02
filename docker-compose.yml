@@ -17,8 +17,12 @@ services:
         environment:
             - _JAVA_OPTIONS=-Xmx1G
             - SERVER_PORT=2333
-            # there is no point in changing the password here, since the container is available only in docker network
-            - LAVALINK_SERVER_PASSWORD=youshallnotpass # Change password if needed (don't forget to change it in healthcheck below and settings.json)
+            # Lavalink credentials (use .env to set these)
+            - LAVALINK_SERVER_PASSWORD=${LAVALINK_PASSWORD}
+            - SPOTIFY_CLIENT_ID=${SPOTIFY_CLIENT_ID}
+            - SPOTIFY_CLIENT_SECRET=${SPOTIFY_CLIENT_SECRET}
+            - YOUTUBE_EMAIL=${YOUTUBE_EMAIL}
+            - YOUTUBE_PASSWORD=${YOUTUBE_PASSWORD}
         volumes:
             - ./lavalink/application.yml:/opt/Lavalink/application.yml
             - ./lavalink/plugins:/opt/Lavalink/plugins/
